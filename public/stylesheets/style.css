@@ -13,13 +13,13 @@ a {
   padding: 20px;
 }
 .table thead {
-  background-color: darkcyan !important;
+  background-color: lightgreen !important;
 }
 .table thead tr th {
   color: white !important;
 }
 h1 {
-  padding-top: 70px;
+  padding-top: 100px;
   padding-left: 520px;
   padding-bottom: 70px;
 }
