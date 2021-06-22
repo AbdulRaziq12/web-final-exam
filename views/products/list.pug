@@ -1,0 +1,48 @@
+extends ../layout
+
+block content
+    .row
+        .col-sm-8
+            h1=title
+        .col-sm-4
+            a(href="/products/add", class="btn btn-success float-right") Add New Product
+    table.table
+        thead
+            tr
+                th Name
+                th Price
+                th Description
+                th Rating
+                th Actions
+        tbody
+            each product in products
+                tr
+                    td=product.name
+                    td=product.price
+                    td=product.discription
+                    td
+                        if product.rating > 0
+                            span(class="fa fa-star checked")
+                        else 
+                            span(class="fa fa-star ")
+                        if product.rating > 1
+                            span(class="fa fa-star checked")
+                        else 
+                            span(class="fa fa-star")
+                        if product.rating > 2
+                            span(class="fa fa-star checked")
+                        else 
+                            span(class="fa fa-star")
+                        if product.rating > 3
+                            span(class="fa fa-star checked")
+                        else 
+                            span(class="fa fa-star")
+                        if product.rating > 4
+                            span(class="fa fa-star checked")
+                        else 
+                            span(class="fa fa-star")
+                        td
+                            a(href="/products/delete/"+product._id, class="btn btn-danger") Delete
+                            a(href="/products/edit/"+product._id, class="btn btn-warning") Edit
+                            a(href="/products/cart/"+product._id, class="btn btn-info") Add To Cart
+                            
