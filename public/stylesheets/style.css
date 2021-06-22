@@ -1,7 +1,7 @@
 body {
   margin: 0% !important;
   font: 14px "Playfair" !important;
-  background-color: honeydew !important;
+  background-color: rgb(112, 197, 112) !important;
 }
 
 a {
@@ -9,7 +9,7 @@ a {
 }
 
 .navbar {
-  background-color: darkcyan !important;
+  background-color: lightgrey !important;
   padding: 20px;
 }
 .table thead {
@@ -30,11 +30,11 @@ h1 {
 
 .btn {
   background-color: white !important;
-  color: darkcyan !important;
-  border: 2px solid darkcyan !important;
+  color: rgb(183, 130, 190) !important;
+  border: 2px solid rgb(234, 133, 238) !important;
   margin-right: 30px;
 }
 
 .checked {
-  color: darkcyan !important;
+  color: rgb(201, 194, 96) !important;
 }
