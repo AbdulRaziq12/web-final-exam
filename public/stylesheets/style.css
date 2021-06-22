@@ -1,7 +1,7 @@
 body {
   margin: 0% !important;
   font: 14px "Playfair" !important;
-  background-color: rgb(112, 197, 112) !important;
+  background-color: lightslategrey !important;
 }
 
 a {
@@ -13,7 +13,7 @@ a {
   padding: 20px;
 }
 .table thead {
-  background-color: lightgreen !important;
+  background-color: lightblue !important;
 }
 .table thead tr th {
   color: white !important;
@@ -30,11 +30,11 @@ h1 {
 
 .btn {
   background-color: white !important;
-  color: rgb(183, 130, 190) !important;
+  color: black !important;
   border: 2px solid rgb(234, 133, 238) !important;
   margin-right: 30px;
 }
 
 .checked {
-  color: rgb(201, 194, 96) !important;
+  color: red !important;
 }
