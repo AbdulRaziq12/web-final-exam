@@ -44,7 +44,6 @@ app.use(function (err, req, res, next) {
 mongoose
   .connect(
     "mongodb+srv://rimshaarif:123@labterminal.ksebx.mongodb.net/LabTerminal",
-    
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
