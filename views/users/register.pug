@@ -1,21 +1,15 @@
 extends ../layout
 
 block content
-  h1 Register
-  .container
-    form(action="/register",method="post")
-            .form-group
-                label(for="name") Name
-                input#name(type="text", class="form-control", name="name" required style = "border-bottom: 2px solid #343a40")
-            .form-group
-                label(for="email") Email
-                input#email(type="email", class="form-control", name="email" required style = "border-bottom: 2px solid #343a40")
-            .form-group
-                label(for="password") Password
-                input#price(type="password", class="form-control", name="password" required style = "border-bottom: 2px solid #343a40")
-            .form-group
-                label(for="gender") Gender
-                select#gender(class="form-control", name="gender" style = "border-bottom: 2px solid #343a40")
-                    option Female
-                    option Male
-            input(type="submit", class="btn btn-info" value="Register")
+  h1 Signup
+  form(action="/register",method="post")
+        .form-group
+            label(for="name") Name
+            input#name(type="text", class="form-control", name="name" required)
+        .form-group
+            label(for="email") Email
+            input#email(type="email", class="form-control", name="email" required)
+        .form-group
+            label(for="password") Password
+            input#price(type="password", class="form-control", name="password" required)
+        input(type="submit", class="btn btn-info" value="Register")

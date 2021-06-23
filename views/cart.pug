@@ -1,13 +1,12 @@
 extends layout
 
 block content
-  h1 My Shopping Cart
+  h1 My shopping Cart
   - var total=0;
-    table.table.table-striped
+    table.table
       thead
         th Name
         th Price
-        th Product Rating
         th Actions
       tbody
         each item in cart
@@ -15,27 +14,6 @@ block content
           tr
             td=item.name
             td=item.price
-            td
-              if item.rating > 0
-                  span(class="fa fa-star checked")
-              else 
-                  span(class="fa fa-star ")
-              if item.rating > 1
-                  span(class="fa fa-star checked")
-              else 
-                  span(class="fa fa-star")
-              if item.rating > 2
-                  span(class="fa fa-star checked")
-              else 
-                  span(class="fa fa-star")
-              if item.rating > 3
-                  span(class="fa fa-star checked")
-              else 
-                  span(class="fa fa-star")
-              if item.rating > 4
-                  span(class="fa fa-star checked")
-              else 
-                  span(class="fa fa-star")
             td
               a(href="/products/cart/remove/"+item._id, class="btn btn-danger") Remove Item
       tfoot

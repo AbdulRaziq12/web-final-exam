@@ -1,7 +1,7 @@
 body {
   margin: 0% !important;
-  background-color: whitesmoke !important;
-  font-family: "Times New Roman", Times, serif !important;
+  font: 14px "Playfair" !important;
+  background-color: honeydew !important;
 }
 
 a {
@@ -12,7 +12,12 @@ a {
   background-color: darkcyan !important;
   padding: 20px;
 }
-
+.table thead {
+  background-color: darkcyan !important;
+}
+.table thead tr th {
+  color: white !important;
+}
 h1 {
   padding-top: 70px;
   padding-left: 520px;
@@ -23,15 +28,13 @@ h1 {
   padding-left: 430px;
 }
 
+.btn {
+  background-color: white !important;
+  color: darkcyan !important;
+  border: 2px solid darkcyan !important;
+  margin-right: 30px;
+}
+
 .checked {
-  color: red !important;
+  color: darkcyan !important;
 }
-
-#gender {
-  padding-top: 6px;
-}
-footer {
-  background-color: #343a40;
-  color: white;
-}
-
