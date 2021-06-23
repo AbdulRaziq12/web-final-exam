@@ -6,7 +6,7 @@ block content
             h1=title
         .col-sm-4
             a(href="/products/add", class="btn btn-success float-right") Add New Product
-    table.table
+    table.table.table-striped
         thead
             tr
                 th Name
@@ -45,4 +45,9 @@ block content
                             a(href="/products/delete/"+product._id, class="btn btn-danger") Delete
                             a(href="/products/edit/"+product._id, class="btn btn-warning") Edit
                             a(href="/products/cart/"+product._id, class="btn btn-info") Add To Cart
+    footer.page-footer.font-small
+        div.footer-copyright.text-center.py-3 Rimsha Arif_FA18-BSE-006
+ 
+
+
                             
